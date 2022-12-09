@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Hello DOM</h1>
+    <p>
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum optio
+      assumenda porro? Modi culpa harum eius alias at, libero earum, provident
+      iste doloremque accusantium a ab facere ipsam, reprehenderit
+      necessitatibus.
+    </p>
+    <ul class="menu">
+        <li>Lorem.</li>
+        <li>Necessitatibus.</li>
+        <li>Voluptatem.</li>
+    </ul>
+    <script>
+        const headingEl=document.querySelector("h1");
+        console.log(headingEl.innerText);
+        headingEl.innerText="Hello Javascript"; // textleri duzeltir
+        headingEl.innerHTML="<u><em>Hello Javascript </em> </u>" // inner html html tagi verir
+    </script>
+  </body>
+</html>
