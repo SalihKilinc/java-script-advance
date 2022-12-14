@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let user={
+firstName:"Ali",
+lastName: "Asus"
+        }
+       // user=null;
+
+        user = user ?? {firstName: "Anonymous" , lastName: ""};
+        const displayName= `${user.firstName} ${user.lastName} `
+        console.log(displayName)
+         
+// nul veya undefined olup olmadigini kontrol eder
+    </script>
+</body>
+</html>
