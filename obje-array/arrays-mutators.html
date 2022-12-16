@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script> 
+    const cars = ["Porche" , "Tesla" ,"Bentley" , "Kartal" ,"Mazda"];
+    console.log(cars)
+    const count = cars.push("Dogan" , "Sahin")  // eleman ekler
+    console.log(cars)
+
+     cars.pop()   // sondaki elemani siler
+    console.log(cars)
+
+    cars.pop() // sondaki elemani siler
+    console.log(cars)
+
+    cars.unshift("Nissan" , "Subaru")  // basa eleman ekler
+    console.log(cars)
+
+    cars.sort()  // alfabetik sira
+    console.log(cars)
+
+    cars.reverse()  // tersten alfabetik sira
+    console.log(cars)
+
+    cars.splice(3 , 2 ,"Jagur" , "volvo" )
+    console.log(cars)
+
+    cars.splice(cars.length-1 ,1 ,"octavia")  // son elemani sildik yerine octavia yazdik
+    console.log(cars)
+    </script>
+</body>
+</html>
