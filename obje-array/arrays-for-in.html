@@ -12,15 +12,40 @@
 
 
         //for of
-        for(let animal of animals){
-console.log( animals)
+        for(let animal of animals){  // sadce dizilerde calisir
+console.log( animal)
+        }
+
+        for (let [i,animal] of animals.entries()){ // for of ile hem deger hemde index numarasi aldik
+            console.log(i ,animal )
         }
 
         
         //for in
-        for(let i in animals){
+        for(let i in animals){ 
 console.log(i, animals[i])
         }
+
+        const adlar =["Kenan" ,"Mehmet" , "Selma" ,"Semra"]
+        const soyAdlar=["Kilinc" , "Adana" ,"Osmaniye " , "Hatay"] 
+
+        const concat = (x,y) => { 
+            let adVeSoyad=[];
+            for(let i in x){
+                adVeSoyad[i]= `${x[i]} ${y[i]}`;
+            }
+            return adVeSoyad;
+        }
+        console.log(concat(adlar,soyAdlar))
+
+
+let cars =["Tesla" ,"Mazda" , "Octavia" , "Volvo"]
+let write="";
+
+for(let x of cars){  // sadece degeri verir index yok
+    write+=x+"";
+}console.log(write)
+
     </script>
 </body>
 </html>
