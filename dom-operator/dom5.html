@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 id="hello">Hello Javascript</h1>
+
+    <p class="contact">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. A esse, culpa animi mollitia ipsa, id itaque
+        perferendis ipsum totam nostrum nobis optio! Vitae perferendis, harum quisquam non quasi quas error, labore
+        consequuntur quis laboriosam quam? Itaque mollitia asperiores aliquid porro! Consequatur cupiditate sequi
+        voluptates quaerat explicabo suscipit saepe voluptate illum.
+    </p>
+
+    <p class="about">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit corrupti architecto quos minima at dolore eligendi
+        nulla ipsum enim dignissimos autem incidunt facilis, non modi iste laborum, placeat dolorum quaerat fugiat fuga
+        dolorem? Pariatur deleniti possimus, reprehenderit veniam velit autem sequi omnis molestiae dolor deserunt!
+        Ullam dolores quis facilis vel. </p>
+
+    <script>
+        const el1 = document.querySelector("#hello") // selector ile extra islem yapilabilir ama GETID ile yapilamaz bu yuzden hantalir
+        const el2 = document.getElementById("hello")
+        const elP=document.getElementsByTagName("p")
+
+        console.log(el1)
+        console.log(elP) 
+        console.log(elP[0]) // indeks alinabilir boylece
+
+        const elAbout=document.getElementsByClassName("about")
+        console.log(elAbout)
+    </script>
+
+</body>
+
+</html>
