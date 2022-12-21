@@ -11,7 +11,7 @@ document.getElementById("btnShowLowScores").addEventListener("click", ()=>{
     lastTDs.forEach( (td, index)=> {
         if(td.innerText<91){
             //td.style.backgroundColor = "red";
-            tblStudentsTbody.querySelector(`tr:nth-child(${index+1})`).style.backgroundColor = "red";
+            tblStudentsTbody.querySelector(`tr:nth-child(${index+3})`).style.backgroundColor = "red";
         }
     })
 
