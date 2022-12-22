@@ -24,38 +24,23 @@
     <li><a href="https//google.com">Lorem</a></li>
     <li><a href="#">Non</a></li>
     <li><a href="#">Provident</a></li>
-    <li><a href="#">Consectetur</a></li>
     <li><a id="x" href="#">Eauque</a></li>
+    <li><a href="#">Consectetur</a></li>
+    
 </ul>
 
     </main>
 <script>
-    document.querySelector(".ull a:first-child").addEventListener("click" , (e) =>{
-        e.preventDefault();  // elemanlarin default olarak kullanilmasini engeller loremde olan google boyle engellendi
-const aboutEl = e.target.closest("main").querySelector(".about"); // main icindeki about classina ulastik
-aboutEl.style.backgroundColor="red";
-aboutEl.innerHTML=e.target.innerHTML; // Lorem tagini paragraf taginin icine attik ve loreme tiklarsak paragraf yerine lorem yazar
+    const xEl = document.querySelector("#x")
+  const listEl =document.querySelector(".ull");
+  console.log(listEl.children)
+  console.log(listEl.childNodes) // cok tercih edilmez
+  console.log(listEl.parentElement.parentElement) // parentler arsi gecis yaptiran tag
+  console.log(listEl.lastElementChild)  // son cocuk secer
+  console.log(listEl.firstElementChild)  // ilk cocuk secer
 
-// closest metodu yukari hareket ettirir childden ebeveyne cikar 
-
-console.log(e.target)
-    })
-
-    document.querySelectorAll(".ull a").forEach((item ,index) => {
-        item.addEventListener("click" , (e)=>{
-            e.preventDefault();  // elemanlarin default olarak kullanilmasini engeller loremde olan google boyle engellendi
-const aboutEl = e.target.closest("main").querySelector(".about"); // main icindeki about classina ulastik
-aboutEl.style.backgroundColor="red";
-aboutEl.innerHTML=e.target.innerHTML; // Lorem tagini paragraf taginin icine attik ve loreme tiklarsak paragraf yerine lorem yazar
-
-// closest metodu yukari hareket ettirir childden ebeveyne cikar 
-
-console.log(e.target)  // bu yontem ile a taglarinin hepsinin icine istedigimiz degeri verdik
-
-
-        })
-
-    })
+  console.log(listEl.previousElementSibling)  // listeden onceki elemani sectik
+  console.log(xEl.parentElement.nextElementSibling.children [0])  // bu stille en alttaki cocugu aldik
 
 </script>
 </body>
