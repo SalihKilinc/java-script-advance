@@ -34,9 +34,5 @@ document.querySelectorAll(".btn-delete").forEach( (button)=> {
     }
   })
 });
-tblStudentsTbody.querySelectorAll("tr").forEach( (tr)=> {
-  tr.addEventListener("click", (e)=>{
-    e.target.closest("tr").classList.toggle("table-info");
-  });
-})
+ 
 /* EVENTS */
