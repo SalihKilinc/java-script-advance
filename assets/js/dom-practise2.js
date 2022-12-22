@@ -18,17 +18,17 @@ document.getElementById("btnShowLowScores").addEventListener("click", ()=>{
   const lastTDs = tblStudentsTbody.querySelectorAll("tr td.score");
   console.log(lastTDs);
   lastTDs.forEach( (td, index)=> {
-      if(td.innerText<50){
+      if(td.innerText<96){  // notlari 96 dan kucuk olanlari aldik
           //td.style.backgroundColor = "red";
           tblStudentsTbody.querySelector(`tr:nth-child(${index+1})`).style.backgroundColor = "red";
       }
   })
 });
-document.querySelectorAll(".btn-delete").forEach( (button)=> {
+document.querySelectorAll(".btn-delete").forEach( (button)=> {  // butun diziyi cagirmak icin once for each kullandik
   button.addEventListener("click", (e)=>{
     e.stopPropagation();// olayın parent lara aktarılmasını engeller.
-    const name = e.target.closest("tr").querySelector("td").innerText;
-    const result = confirm(`Are you sure to delete ${name}?`);
+    const name = e.target.closest("tr").querySelector("td").innerText; // td icine girdik
+    const result = confirm(`Are you sure to delete ${name}?`); //isimleri aldik silmek icin name ile
     if(result){
         //silme işlemi
     }
