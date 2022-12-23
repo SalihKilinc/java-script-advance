@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        //senkron calisma ornegi
+        const sayHello =() => {
+            console.log("Hello2")
+        }
+
+console.log("-----senkron calisma---------")
+        console.log("Hello1")
+        sayHello()                // fonksiyonu burda cagirdik
+        console.log("Hello3")
+        console.log("Hello4")
+
+
+
+
+
+        const sayHello2 = () => {
+            setTimeout(() => {
+console.log("Hello2")
+            },0);
+        }
+
+console.log("----Asenkron calisma------")
+        console.log("Hello1")
+        sayHello2()                // burayi en sonda yazar asenkron oldugu icin 
+        console.log("Hello3")
+        console.log("Hello4")
+
+
+    </script>
+</body>
+</html>
