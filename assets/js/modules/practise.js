@@ -22,6 +22,8 @@ const nSortASC = (arr) => {
 })
 return sortedArr;
 }
-
-
-export {sSortASC , sSortDESC ,nSortASC}
+const nSortDESC = (arr) => {
+    const sortedArr = [...arr].sort((a, b) => b - a);
+    return sortedArr;
+  };
+export {sSortASC , sSortDESC ,nSortASC , nSortDESC}
