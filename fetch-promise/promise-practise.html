@@ -14,8 +14,12 @@
     <script>
         document.getElementById("btn").addEventListener("click", () => {
             console.log("Clicked");
-            const result = confirm("Are you sure to delete")
-            console.log(result)
+
+            confirmAsync("Are you sure to update").then(resp => console.log(resp))
+
+
+            // const result = confirm("Are you sure to delete")
+            // console.log(result)
             console.log("Ended")
 
         })
@@ -25,8 +29,8 @@
 
             return new Promise((resolve) => {
 setTimeout( () =>{
-    const result = confirm(msg)
-    resolve(result)
+    const result = confirm(msg);
+    resolve(result);
 } ,0)
             })
         }
